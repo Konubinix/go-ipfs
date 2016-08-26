@@ -44,7 +44,7 @@ func Init(out io.Writer, nBitsForKeypair int) (*Config, error) {
 		Bootstrap: BootstrapPeerStrings(bootstrapPeers),
 		Identity:  identity,
 		Discovery: Discovery{MDNS{
-			Enabled:  true,
+			Enabled:  false,
 			Interval: 10,
 		}},
 
